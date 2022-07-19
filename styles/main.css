@@ -1,0 +1,166 @@
+
+body {
+    background-color: rgba(0, 0, 0, .9);
+}
+
+#game {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:auto;
+    background: rgba(0, 0, 255, 0.782);
+    padding: 20px;
+}
+
+#btnNewWord {
+    padding:10px 20px;
+    margin:5px;
+    color: white;
+    background-color: green;
+    border: 5px solid white;
+    box-shadow: 0px 0px 3px black;
+    border-radius: 10px;
+}
+
+#btnNewWord:active {
+    background-color: rgba(0, 189, 0, 0.776);
+}
+
+#galow {
+    padding:20px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    margin-bottom: 10px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size:40% 50%;
+}
+
+#player {
+    padding:10px;
+    background-color: rgb(0, 58, 216);
+    margin-bottom: 10px;
+    border-radius: 8px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#txtLetter {
+    width: 20px;
+    margin:5px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    background-color: #888;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+
+#btnTry {
+    font-size: 8pt;
+    text-transform: uppercase;
+    color: white;
+    background-color: orangered;
+    border: 2px solid white;
+    padding:5px;
+    border-radius: 5px;
+}
+
+#btnTry:active {
+    background: rgba(255, 68, 0, 0.689);
+}
+
+#word {
+    padding:10px 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.letter {
+    font-size: 12pt;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #888;
+    width: 20px;
+    margin:2px;
+    text-align: center;
+    display: none;
+}
+
+/*CLASSES*/
+.error0 {
+    background-image: url(images/error0.png);
+}
+
+.error1 {
+    background-image: url(images/error1.png);
+}
+
+.error2 {
+    background-image: url(images/error2.png);
+}
+
+.error3 {
+    background-image: url(images/error3.png);
+}
+
+.error4 {
+    background-image: url(images/error4.png);
+}
+
+.error5 {
+    background-image: url(images/error5.png);   
+}
+
+.error6 {
+    background-image: url(images/error6.png);            
+}
+
+.error7 {
+    background-image: url(images/error7.png);        
+}
+
+.SL {
+    padding:10px;
+    color: yellow;
+    font-family: consolas, 'sans-serif';
+    background-color: red;
+    text-shadow: 1px 1px 1px black;
+    font-size: 10pt;
+    text-transform: uppercase;
+    border-radius: 8px;
+    margin:2px;
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.victory {
+    font-size: 11pt;
+    color: rgb(0, 240, 0);
+    font-family: consolas, 'sans-serif';
+    text-align: center;
+    text-shadow: 0px 0px 2px white;
+    display: none;
+    margin-top: 120px;
+}
+
+.derrote {
+    font-size: 12pt;
+    color: red;
+    font-family: consolas, 'sans-serif';
+    text-align: center;
+    text-shadow: 0px 0px 2px white;
+    display: none;
+    margin-top: 120px;
+}
