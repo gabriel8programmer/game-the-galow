@@ -23,7 +23,6 @@ function start(){
     word = defineNewWord();
 
     h1 = document.getElementById("textRes");
-    h1.style.display = "none";
 
     //OBJECTS HTML
     btnNewWord = document.getElementById("btnNewWord");
@@ -54,11 +53,10 @@ function clearPositions(){
 }
 
 function updateGalow(error){
-    let galow = document.getElementById("galow");
+    let galow = document.getElementById("image-galow");
     switch (error){
         case 0:
             galow.setAttribute("class", "error0");
-            h1.style.display = "none";
             break;
         case 1:
             galow.setAttribute("class", "error1");
