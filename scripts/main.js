@@ -1,8 +1,6 @@
-const LISTWORD = ["urso", "cavalo", "carro", "peixe", "cobra", "aviao", "urso", "calculadora", "matematica", "coelho", "bicicleta",
-                    "caixa", "margarida", "amarelo", "azul", "verde", "vermelho", "preto", "ciano", "magenta", "castanho"];
+const LISTWORD = ["urso", "cavalo", "carro", "peixe", "cobra", "aviao", "urso", "calculadora", "matematica", "coelho", "bicicle", "caixa", "margarida", "amarelo", "azul", "verde", "vermelho", "preto", "ciano", "magenta", "castanho"];
 
 let btnNewWord;
-let btnTry;
 let word;
 let h1;
 let switchLetters;
@@ -30,14 +28,9 @@ function start(){
     //OBJECTS HTML
     btnNewWord = document.getElementById("btnNewWord");
     btnNewWord.addEventListener("click", start);
-    btnTry = document.getElementById("btnTry");
-    btnTry.addEventListener("click", play);
     switchLetters = document.getElementById("switchLetters");
     switchLetters.innerHTML = "";
     switchLetters.removeAttribute("class");
-
-    let letter = document.getElementById("txtLetter");
-    letter.value = "";
 
     running = true;
     error = 0;
@@ -112,14 +105,14 @@ function updateWord(){
 }
 
 function updateSwitchLetters(){
+    let text = "";
     for (let c = 0; c < listLetters.length; c++){
-        switchLetters.innerHTML = listLetters;
-        switchLetters.setAttribute("class", "SL");
+        text += ((c === 0)? "": "-") + listLetters[c];
     }
+    switchLetters.innerHTML = text;
 }
 
-function play(){
-    let letter = document.getElementById("txtLetter").value;
+function play(letter){
 
     //ADD THE LETTER IN WORD
     let countAccept = 0;

@@ -11,8 +11,39 @@
         <button id="btnNewWord">New Word</button>
         <div id="galow" class="error0"><h1 id="textRes"></h1></div>
         <div id="player">
-            <p><input type="text" id="txtLetter" maxlength="1" size="1"/><button id="btnTry">Try</button></p>
+            <!--KEYBOARD FOR INPUT PLAYER-->
+            <div id="keyboard">
+                <input type="button" onclick="play('a')" value="a" class="key"/>
+                <input type="button" onclick="play('b')" value="b" class="key"/>
+                <input type="button" onclick="play('c')" value="c" class="key"/>
+                <input type="button" onclick="play('d')" value="d" class="key"/>
+                <input type="button" onclick="play('e')" value="e" class="key"/>
+                <input type="button" onclick="play('f')" value="f" class="key"/>
+                <input type="button" onclick="play('g')" value="g" class="key"/>
+                <input type="button" onclick="play('h')" value="h" class="key"/>
+                <input type="button" onclick="play('i')" value="i" class="key"/>
+                <input type="button" onclick="play('j')" value="j" class="key"/>
+                <input type="button" onclick="play('k')" value="k" class="key"/>
+                <input type="button" onclick="play('l')" value="l" class="key"/>
+                <input type="button" onclick="play('m')" value="m" class="key"/>
+                <input type="button" onclick="play('n')" value="n" class="key"/>
+                <input type="button" onclick="play('o')" value="o" class="key"/>
+                <input type="button" onclick="play('p')" value="p" class="key"/>
+                <input type="button" onclick="play('q')" value="q" class="key"/>
+                <input type="button" onclick="play('r')" value="r" class="key"/>
+                <input type="button" onclick="play('s')" value="s" class="key"/>
+                <input type="button" onclick="play('t')" value="t" class="key"/>
+                <input type="button" onclick="play('u')" value="u" class="key"/>
+                <input type="button" onclick="play('v')" value="v" class="key"/>
+                <input type="button" onclick="play('w')" value="w" class="key"/>
+                <input type="button" onclick="play('x')" value="x" class="key"/>
+                <input type="button" onclick="play('y')" value="y" class="key"/>
+                <input type="button" onclick="play('z')" value="z" class="key"/>
+            </div>
+
+            <!--LIST OF LETTERS-->
             <div id="switchLetters"></div>
+
         </div>
         <div id="word">
             <input type="text" class="letter" id="l0"  maxlength="1" size="1" readonly/>

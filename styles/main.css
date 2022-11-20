@@ -4,7 +4,7 @@ body {
 }
 
 #game {
-    width: 400px;
+    width: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,8 +29,8 @@ body {
 
 #galow {
     padding:20px;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,39 +42,38 @@ body {
 }
 
 #player {
-    padding:10px;
+    padding:20px;
     background-color: rgb(0, 58, 216);
     margin-bottom: 10px;
     border-radius: 8px;
-    width: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
 }
 
-#txtLetter {
-    width: 20px;
-    margin:5px;
-    text-align: center;
-    text-transform: uppercase;
-    color: white;
-    background-color: #888;
-    font-weight: bold;
-    text-shadow: 1px 1px 1px black;
-}
-
-#btnTry {
-    font-size: 8pt;
-    text-transform: uppercase;
-    color: white;
-    background-color: orangered;
-    border: 2px solid white;
-    padding:5px;
+/*ID FOR THE KEYBOARD*/
+#keyboard {
+    background-color:#000;
+    width: 150px;
+    height: 100px;
     border-radius: 5px;
+    padding:10px;
+    /*FLEX-BOX*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-#btnTry:active {
-    background: rgba(255, 68, 0, 0.689);
+#switchLetters {
+    flex:1;
+    background-color: #aaa;
+    padding: 10px;
+    width: 150px;
+    text-transform: uppercase;
+    font-size: 10pt;
+    font-weight: bold;
+    text-align: center;
 }
 
 #word {
@@ -130,19 +129,25 @@ body {
     background-image: url(../images/error7.png);   
 }
 
-.SL {
-    padding:10px;
-    color: yellow;
-    font-family: consolas, 'sans-serif';
-    background-color: red;
-    text-shadow: 1px 1px 1px black;
-    font-size: 10pt;
+/*CLASS FOR KEYS OF KEYBOARD*/
+.key {
     text-transform: uppercase;
-    border-radius: 8px;
-    margin:2px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
     font-weight: bold;
-    display: flex;
-    flex-wrap: wrap;
+    font-family: consolas;
+    border:1px solid white;
+    border-radius: 2px;
+    flex-basis: 1;
+    transition: .5s;
+}
+.key:hover {
+    transform: scale(0.9);
+}
+.key:active {
+    background-color: #ddd;
+    color: #000;
+    transition: .5s;
 }
 
 .victory {
