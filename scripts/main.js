@@ -12,17 +12,16 @@ let listLetters = [];
 
 function defineNewWord(){
     let lenListWord = LISTWORD.length;
-    let newWord = LISTWORD[Math.round(Math.random() * (lenListWord-1))];
-    return newWord;
+    word = LISTWORD[Math.round(Math.random() * (lenListWord-1))];
+    h1 = document.getElementById("textRes");
+    h1.style.display="none";
 }
 
 function start(){
     clearPositions();
 
     //NEW WORD
-    word = defineNewWord();
-
-    h1 = document.getElementById("textRes");
+    defineNewWord();
 
     //OBJECTS HTML
     btnNewWord = document.getElementById("btnNewWord");
@@ -53,34 +52,28 @@ function clearPositions(){
 }
 
 function updateGalow(error){
-    let galow = document.getElementById("image-galow");
+    let galow = document.getElementById("image");
     switch (error){
         case 0:
             galow.setAttribute("class", "error0");
             break;
         case 1:
             galow.setAttribute("class", "error1");
-            h1.style.display = "none";
             break;
         case 2:
             galow.setAttribute("class", "error2");
-            h1.style.display = "none";
             break;
         case 3:
             galow.setAttribute("class", "error3");
-            h1.style.display = "none";
             break;
         case 4:
             galow.setAttribute("class", "error4");
-            h1.style.display = "none";
             break;
         case 5:
             galow.setAttribute("class", "error5");
-            h1.style.display = "none";
             break;
         case 6:
             galow.setAttribute("class", "error6");
-            h1.style.display = "none";
             break;
         case 7:
             galow.setAttribute("class", "error7");
