@@ -7,3 +7,4 @@
 * i changed Structure of the project for better functioning
 * i changed the css styles for better view
 * i refatored the code javascript in project
+__OBJ__next udpate with the usage sass, bootstrap and Framework React
