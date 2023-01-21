@@ -1,0 +1,52 @@
+#hud {
+
+  background-color: $primary-color;
+  width: 100%;
+  padding: 10px 0 20px;
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+
+    text-align: center;
+    text-transform: uppercase;
+    color: $light;
+    font-size: 20px;
+    letter-spacing: 100%;
+  }
+
+  span {
+    margin-left: 20px;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 2px #000;
+  }
+
+  strong {
+
+    color: $light;
+  }
+
+  .hud-matche {
+    color: $blue;
+  }
+
+  .hud-victory {
+    color: $green;
+  }
+
+  .hud-derrote {
+    color: $red;
+  }
+
+  .hud-score {
+    color: $yellow;
+  }
+
+  .hud-status {
+    text-align: center;
+    margin-top: 15px;
+    color: $yellow;
+  }
+
+}
